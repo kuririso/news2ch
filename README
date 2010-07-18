@@ -1,0 +1,28 @@
+2chのスレッドタイトルをtwitterにpostするスクリプトです。
+
+mirror.pl : cronから呼び出す本体
+MyFileUtil.pm : ファイル操作関係のもの
+MyFileUtilTest.pl : 単体テスト用
+MyMirror2ch.pm : 2chのスレッドをローカルに持ってくるときに使う
+MyMirror2chTest.pl : 単体テスト用
+MyTwitterClient.pm : twitterにpostするときに使う
+MyTwitterClientTest.pl : 単体テスト用
+
+下記のようなconfigファイルを用意して
+$config_fileにファイルパスを指定します。
+
+---
+server: tsushima.2ch.net
+ita: news
+mirror_dir: /Users/kuririso/news2ch/mirror
+rss: /Users/kuririso/news2ch/news.rdf
+draft: /Users/kuririso/news2ch/mirror/Draft
+bitly_api_key: R_hogefuga
+bitly_user_id: hogefuga
+password: hogehoge
+username: hogefuga
+consumer_key: hogefuga
+consumer_secret: hogemoge
+access_token: hoge
+access_token_secret: hoge
+
